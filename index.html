@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Estação Meteorológica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #2C3E50, #3498DB);
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin: 100px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .header img {
+      max-width: 80px; /* Tamanho da logo */
+      height: auto;
+    }
+    h1 {
+      color: #2C3E50;
+      font-size: 2em;
+      margin: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background: #3498DB;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2C3E50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho com o nome e a logo -->
+    <div class="header">
+      <img src="logo.png" alt="Logo"> <!-- Adicione sua logo aqui -->
+      <h1>Login estação meteorologica</h1>
+    </div>
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="Usuário" required>
+      <input type="password" name="password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</body>
+</html>
